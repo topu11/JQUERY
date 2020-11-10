@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<title>Title</title>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet.</h1>
+<p>Lorem ipsum dolor sit amet.</p>
+<p class="name">Lorem ipsum dolor sit amet.</p>
+<button id="btn">Hide Me</button>
+<button id="btn2">Show Me</button>
+<br>
+<a href="https://www.google.com/">Goggle ME</a>
+<br>
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+<br>
+<button id="btn4">ALL clear</button>
+
+<button id="btn3">this clear</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+
+<script>
+    $('#btn').click(function(){
+        $('h1').hide();
+        $('p.name').hide();
+    });
+    $('#btn2').click(function(){
+        $('h1').show();
+    });
+    $('#btn4').click(function(){
+        $('*').hide();
+       
+    });
+    $('#btn3').click(function(){
+        $(this).hide();
+    });
+</script>
+</body>
+</html>

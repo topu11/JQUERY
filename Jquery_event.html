@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<title>Jquery_event</title>
+</head>
+<body>
+    <p style="color: aqua;" id="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, temporibus?</p>
+    <p style="color: burlywood;" id="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, temporibus?</p>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script>
+    document.getElementById(1).addEventListener("click",function(){
+        confirm("ok");
+    })
+    $('#1').click(function(){
+        $(this).hide();
+    });
+    $('#2').dblclick(function(){
+        $(this).hide();
+    })
+</script>
+</body>
+</html>

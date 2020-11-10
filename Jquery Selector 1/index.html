@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY 2</title>
+</head>
+<body>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, eius?</p>
+     <p class="x1">Lorem ipsum dolor sit amet.</p>
+     <p class="x2">Lorem ipsum dolor sit amet.</p>
+    <button id="1">Click Me</button>
+    <button id="2">Hide all</button>
+    <button id="3">Show all</button>
+    <button id="4">ME</button>
+    <button id="5">new ME</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+     $('#2').click(function(){
+         $('p').hide();
+     });
+     $('#3').click(function(){
+         $('p').show();
+     });
+     $('#4').click(function(){
+         $('p:first').hide();
+     });
+     $('#1').click(function(){
+         $(this).hide();
+     });
+     $('#5').click(function(){
+         $('p:last').hide();
+     })
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY 2</title>
+</head>
+<body>
+     <a href="https://google.com" target="_blank" rel="noopener noreferrer">google</a>
+     <br>
+     <a href="#">Facbook</a>
+     <br>
+     <h2>list 1:</h2>
+     <ul>
+         <li>Orange</li>
+         <li>Red</li>
+         <li>Green</li>
+     </ul>
+     <h2>list 2: </h2>
+     <ul>
+        <li>Orange</li>
+        <li>Red</li>
+        <li>Green</li>
+    </ul>
+    <h2>list 3: </h2>
+     <ul class="x">
+        <li>Orange</li>
+        <li>Red</li>
+        <li>Green</li>
+    </ul>
+    <button id="1">Click Me</button>
+    <button id="2">Click Me</button>
+    <button id="3">Hide Li </button>
+    <button id="4">Hide Li 2</button>
+    <button id="5">Hide Li 3</button>
+    <button id="6">Hide Li 4</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $('#1').click(function(){
+    $('a[target="_blank"]').hide();
+    });
+    $('#2').click(function(){
+    $('a[href="#"]').hide();
+    });
+    $('#3').click(function(){
+        $('ul li:first-child').hide();
+    });
+    $('#4').click(function(){
+        $('ul li:last-child').hide();
+    });
+    $('#5').click(function(){
+        $('ul li:nth-child(1)').hide();
+    });
+    $('#6').click(function(){
+        $('.x li:nth-child(3)').hide();
+    });
+    </script>
+</body>
+</html>
