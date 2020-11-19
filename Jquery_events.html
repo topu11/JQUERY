@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <p class="x">Click and hide importaant.....</p>
+  <br>
+  <p class="x1">Double click and hide important</p>
+  <br>
+  <p class="x2">mouse hover and importaant</p>
+  <br>
+  <p class="x3">hover and output</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $('.x').click(function(){
+        $(this).hide();
+    });
+    $('.x1').dblclick(function()
+    {
+       $(this).hide();
+    });
+    $('.x2').mouseover(function(){
+        alert("Allah Akabr");
+    });
+    $('.x3').hover(function(){
+        alert("Allah Akbar Allah Akbar");
+    },function(){
+        alert("mash allah");
+    })
+    </script>
+</body>
+</html>

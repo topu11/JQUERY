@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <style>
+        .btn {
+            width: 540px;
+            text-align: center;
+            background-color: cadetblue;
+            color: whitesmoke;
+            padding: 20px;
+            font-size: 24px;
+            margin-left: 400px;
+        }
+
+        .lorem {
+            width: 500px;
+            text-align: justify;
+            background-color: cadetblue;
+            color: rgb(17, 1, 1);
+            padding: 20px;
+            font-size: 20px;
+            margin-left: 400px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn">Click Me</button>
+    <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae ipsum deleniti,
+        blanditiis voluptas officiis voluptatibus mollitia officia hic eveniet dolorem totam praesentium cupiditate iure
+        quidem. At debitis incidunt consectetur?</div>
+
+        <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae ipsum deleniti,
+            blanditiis voluptas officiis voluptatibus mollitia officia hic eveniet dolorem totam praesentium cupiditate iure
+            quidem. At debitis incidunt consectetur?</div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                $('.lorem').slideToggle('slow');
+            })
+        })
+    </script>
+</body>
+
+</html>

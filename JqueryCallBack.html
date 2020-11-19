@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERYCALLBACK</title>
+</head>
+<body>
+
+<p class="1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, error!</p>
+<button class="2">click me</button>
+
+<br>
+<p class="3">Lorem ipsum dolor sit amet.</p>
+<button class="4">click me</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+       $('.2').click(function(){
+           $('.1').hide(1000,function(){
+               alert("hieded");
+           })
+       });
+       $('.4').click(function(){
+           $('.3').hide(1000);
+           alert("hided");
+           $(this).hide(2000);
+       })
+    </script>
+</body>
+</html>

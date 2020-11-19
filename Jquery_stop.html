@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn
+        {
+            width: 500px;
+            background-color: red;
+            text-align: center;
+            padding: 20px;
+            font-size: 15px;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+        .lorem
+        {
+            width: 500px;
+            background-color: greenyellow;
+            text-align: center;
+            padding: 20px;
+            font-size: 15px;
+            margin: auto;
+            display: none;
+            overflow: hidden;
+        }
+        button
+        {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Stop</button>
+    <div class="btn">Click me</div>
+    <div class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum magnam assumenda illum quo, culpa eligendi, sapiente cumque impedit excepturi quas pariatur iste placeat debitis blanditiis consequuntur in exercitationem? Doloribus, accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus quam quod! Minus odio ullam blanditiis nobis. Dolores adipisci minima reprehenderit, laudantium assumenda porro eum similique? Sint fugiat minima quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorum architecto inventore voluptas necessitatibus voluptate aliquam, quia atque accusamus officiis facere totam! Cumque odit fugit fugiat eaque ex cum dignissimos?</div>
+    
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $('.btn').click(function(){
+          $('.lorem').slideToggle(8000);
+      });
+      $("button").click(function(){
+        $('.lorem').stop();
+      })
+    </script>
+</body>
+
+</html>

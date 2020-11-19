@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <title>Jquery_event</title>
+    <style>
+        .box1 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            display: none;
+        }
+
+        .box2 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(20, 220, 37);
+            display: none;
+        }
+
+        .box3 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(20, 157, 220);
+            display: none;
+        }
+        .box4 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            
+        }
+
+        .box5 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(20, 220, 37);
+            
+        }
+
+        .box6 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(20, 157, 220);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="x1">Frade In</button>
+    <button id="x2">Frade out</button>
+    <button id="x3">Frade toggle</button>
+    <button id="x4">Frade To</button>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <br>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <br>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".x1").click(function () {
+                $(".box1").fadeOut();
+            });
+            $("#x1").click(function () {
+                $(".box1").fadeIn(1000);
+                $(".box2").fadeIn(2000);
+                $(".box3").fadeIn(3000);
+            });
+            $("#x2").click(function () {
+                $(".box1").fadeOut(1000);
+                $(".box2").fadeOut(2000);
+                $(".box3").fadeOut(3000);
+            });
+            $("#x3").click(function () {
+                $(".box1").fadeToggle(1000);
+                $(".box2").fadeToggle(2000);
+                $(".box3").fadeToggle(3000);
+            });
+            $("#x4").click(function () {
+                $(".box4").fadeTo('slow',0.3);
+                $(".box5").fadeTo('slow',0.6);
+                $(".box6").fadeTo(3000,0.5);
+            });
+        });
+    </script>
+</body>
+
+</html>

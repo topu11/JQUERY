@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HideShow</title>
+</head>
+
+<body>
+    <div>
+        <p class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro ab aut ipsum? Autem ipsa temporibus aliquam
+            debitis ea. Dolorum voluptas error aliquid aliquam quos repellendus blanditiis natus. Eum, voluptas!</p>
+        
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+    </div>
+    <br>
+    <div>
+        <p class="name1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro ab aut ipsum? Autem ipsa temporibus aliquam
+            debitis ea. Dolorum voluptas error aliquid aliquam quos repellendus blanditiis natus. Eum, voluptas!</p>
+        
+            <button id="hide1">Hide 1</button>
+            <button id="show1">Show 2</button>
+    </div>
+    <br>
+    <div>
+        <p class="name2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, illo cupiditate, nulla optio aliquam excepturi nobis libero tenetur nesciunt explicabo recusandae eos aspernatur quaerat neque natus aut possimus, accusantium consequatur!</p>
+
+        <button id="toggler">Troggle</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('#show').click(function(){
+            $('p.name').show('fast');
+        });
+        $('#hide').click(function(){
+            $('p.name').hide('slow');
+        });  
+        $('#show1').click(function(){
+            $('p.name1').show('2000');
+        });
+        $('#hide1').click(function(){
+            $('p.name1').hide('1000');
+        });
+        $('#toggler').click(function(){
+            $('p.name2').toggle('1000');
+        })
+    </script>
+</body>
+
+</html>
