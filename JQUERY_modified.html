@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xp1
+        {
+            width: 100px;
+            height: 200px;
+            background-color: grey;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="xp1">
+
+    </div>
+    <button id="btn1">Click</button>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('#btn1').click(function(){
+            $('.xp1').width(500).height(400);
+        })
+    </script>
+</body>
+</html>

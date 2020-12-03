@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valina DataAttribute</title>
+    <style>
+        .x2
+        {
+            display: block;
+            background-color: aquamarine;
+            color: blue;
+        }
+        .x3
+        {
+            display: block;
+            background-color: goldenrod;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="x" data-number="1" data-name="touhidul"></p>
+    <p class="x1 "data-number="2" data-name="touhidul 1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eos.</p>
+    <p class="x1" data-number="3" data-name="touhidul 2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eos.</p>
+    <p class="x2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eos.</p>
+    <script>
+        let select = document.getElementById("x");
+        console.log(select.getAttribute("data-number"));
+        console.log(select.getAttribute("data-name"));
+        let query=document.querySelectorAll(".x1");
+        console.log(query[0].getAttribute("data-number"));
+        console.log(query[1].getAttribute("data-number"));
+        let query2=document.querySelector(".x2");
+        function flag(flag)
+        {
+            if(flag){
+                query2.className="x3";
+            }
+            else
+            query2.className="x2";
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY_Ancestor</title>
+    <style>
+        .ancestor *
+        {
+           display: block;
+           border: 2px solid #999;
+           padding: 5px;
+           margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ancestor">
+        <div>div 
+            <ul>ul
+              <li>li
+                 <span>span</span>
+              </li>
+            </ul>
+        </div>
+    </div>
+<br>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+       $("span").parent().css({
+           "color":"green",
+           "border" :"2px solid green"
+       });
+       $("span").parents().css({
+           "color":"blue",
+           "border" :"2px solid green"
+       });
+       $("span").parents("div").css({
+           "color":"yellow",
+           "border" :"2px solid green"
+       }); 
+       $("span").parentsUntil("ul").css({
+           "color":"red",
+           "border" :"2px solid green"
+       });
+      
+    </script>
+</body>
+</html>

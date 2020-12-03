@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quod.</p>
+    <p id="lorem2">Lorem, ipsum dolor.</p>
+    <p id="lorem6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quod.jb cbdb</p>
+    <p><input id="lorem3" type="text" placeholder="input you name"></p>
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set Html</button>
+    <button id="btn3">Set Value</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('#btn1').click(function () {
+            $('#lorem1').text("lorem15");
+        });
+        $('#btn2').click(function () {
+            $('#lorem2').html(
+                '<p id="lorem6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quod. <b>NEW ADDITION</b></p>'
+                );
+        });
+        $('#lorem6').click(function () {
+            $(this).css({'width':'100px','-moz-transition':'width 0.5s ease-out','-webkit-transition':'width 0.5s ease-out','transition':'width 0.5s ease-out'});
+       setTimeout( function() {
+          confirm("ok welldone")
+       }, 500);
+      });
+      $('#btn3').click(function () {
+            $('#lorem3').val("TOUHIDUL ISLAM");
+        });
+    </script>
+</body>
+
+</html>

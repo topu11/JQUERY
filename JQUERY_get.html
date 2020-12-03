@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p id="1">Lorem ipsum dolor sit amet <b>consectetur adipisicing elit.</b> Vel, eius.</p>
-    <input type="text" id="2" placeholder="Enter your name" >
+    <input type="text" id="2" placeholder="Enter your name">
+    <br><br>
+    <a href="https://facebook.com" id="b" target="_blank">Facebook</a>
+    <a href="https://google.com" id="b" target="_blank">google</a>
     <br><br>
     <button id="btn1">Show Text</button>
     <button id="btn2">Show HTML</button>
     <button id="btn3">Show value</button>
-
-
+    <button id="btn4">Show Attribut</button>
+    <button id="btn5">Show Attribut</button>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-     $('#btn1').click(function(){
-         var x=$('#1').text();
-         confirm("This is text:  " +x);
-     });
-     $('#btn2').click(function(){
-         var x=$('#1').html();
-         confirm("This is text:  " +x);
-     });
-     $('#btn3').click(function(){
-         var x=$('#2').val();
-         confirm("This is text:  " +x);
-     });
+        $('#btn1').click(function () {
+            var x = $('#1').text();
+            confirm("This is text:  " + x);
+        });
+        $('#btn2').click(function () {
+            var x = $('#1').html();
+            confirm("This is text:  " + x);
+        });
+        $('#btn3').click(function () {
+            var x = $('#2').val();
+            confirm("This is text:  " + x);
+        });
+        $('#btn4').click(function () {
+            var x = $('a[href="facebook.com"]').attr("href");
+            confirm("This is text:  " + x);
+        });
+        $('#btn5').click(function () {
+            var x = $('a[target="_blank"]').attr("href");
+            confirm("This is text:  " + x);
+        });
     </script>
 </body>
+
 </html>

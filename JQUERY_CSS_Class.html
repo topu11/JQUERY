@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1
+        {
+            font-size: 50px;
+            color: red;
+            display: block;
+            margin: 10px;
+            padding: 50px;
+            background-color: aqua;
+        }
+        .p2
+        {
+            border: 1px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+    
+<p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quaerat!</p>
+<br>
+<button id="btn1">Click Me</button>
+<button id="btn2">Remove Class</button>
+<button id="btn3">toggle Class</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('#btn1').click(function(){
+            $('#p1').addClass("p1 p2");
+        });
+        $('#btn2').click(function(){
+            $('#p1').removeClass("p1");
+        });
+        $('#btn3').click(function(){
+            $('#p1').toggleClass("p1 p2")
+        });
+
+    </script>
+</body>
+</html>

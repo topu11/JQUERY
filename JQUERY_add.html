@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY ADD</title>
+</head>
+
+<body>
+
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quod?</p>
+    <button id="p2">Click Here</button>
+    <br><br>
+    <img src="images/nature.jpg" alt="nature" width="200px" height="200px"><br>
+    <button id="p3">Click Here</button>
+    <button id="p5">Click Here</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+       $('#p2').click(function(){
+           $('#p1').append("<h6>This is post Apprend</h6>");
+       });
+       $('#p2').click(function(){
+           $('#p1').prepend("<h5>This is pre Apprend</h5>");
+       });
+       $('#p3').click(function(){
+           $("img").after(" image");
+           $("img").before("this is an ");
+       });
+       $('#p5').click(function(){
+           $("img").after(" <b>image</b>");
+           $("img").before("<b>his is an</b> ");
+       });
+    </script>
+</body>
+
+</html>
